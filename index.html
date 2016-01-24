@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Troika 16 Registration Form</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body onload="validateForm()">
+	<div class="form">
+	<header>Troika 16 Registration Form</header>
+	<form method="POST" action="submit.php" autocomplete="off" onsubmit="return validateForm()"> 
+		<div class="Description">
+		<p class="event">Events:</p>
+			<input type="checkbox" name="bits" value="Yes" class="check">BITS<br>
+			<input type="checkbox" name="bots" value="Yes" class="check">BOTS<br>
+			<input type="checkbox" name="brainwave" value="Yes" class="check">Brainwave<br>
+			<input type="checkbox" name="designpro" value="Yes" class="check">Design Pro<br>
+			<input type="checkbox" name="electrocution" value="Yes" class="check">Electrocution<br>
+			<input type="checkbox" name="envision" value="Yes" class="check">Envision<br>
+			<input type="checkbox" name="radix" value="Yes" class="check">Radix<br>
+			<input type="checkbox" name="technovision" value="Yes" class="check">Technovision<br>
+		<p>There's a single registration required for an event, and there is no separate online registration for sub events.</p>
+		</div>
+		<div class="thead"> Team Details </div>
+		<div class="Tdetails">
+			Team Name: 
+			<input type="text" name="teamname" maxlength="15" pattern="[A-Za-z0-9\s]+" placeholder="" required title="Name must consists of aplhanumeric characters">
+			<br>
+			Team Strength 
+			<select name="strength" required>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+		</div>
+		<br>
+		<div class="mhead"> Member 1 </div><br>
+		<div class="m">
+			Name:
+			<input class="member1" type="text" name="name1" maxlength="50" pattern="[A-Za-z\s]+" placeholder="Full Name" required title="Name must contain only alphabets and spaces"><br>
+			Contact Number:
+			<input class="member1" type="number" name="contact1" maxlength="10" placeholder="10 digits" required><br>
+			Email:
+			<input class="member1" type="email" name="email1" maxlength="50" placeholder="" required><br>
+			College Name:
+			<input class="member1" type="text" name="college1" maxlength="100" pattern="[A-Za-z\s]+" placeholder="" required title="Name must contain only alphabets and spaces"><br>
+		</div>
+		<br>
+		<div class="mhead"> Member 2 </div><br>
+		<div class="m">
+			Name:
+			<input class="member2" type="text" name="name2" maxlength="50" pattern="[A-Za-z\s]+" placeholder="Full Name" title="Name must contain only alphabets and spaces"><br>
+			Contact Number:
+			<input class="member2" type="number" name="contact2" maxlength="10" placeholder="10 digits" ><br>
+			Email:
+			<input class="member2" type="email" name="email2" maxlength="50" placeholder="" ><br>
+			College Name:
+			<input class="member2" type="text" name="college2" maxlength="100" pattern="[A-Za-z\s]+" placeholder="" title="Name must contain only alphabets and spaces" ><br>
+		</div>
+		<br>
+		<div class="mhead"> Member 3 </div><br>
+		<div class="m">
+			Name:
+			<input class="member3" type="text" name="name3" maxlength="50" pattern="[A-Za-z\s]+" placeholder="Full Name" title="Name must contain only alphabets and spaces"><br>
+			Contact Number:
+			<input class="member3" type="number" name="contact3" maxlength="10" placeholder="10 digits" ><br>
+			Email:
+			<input class="member3" type="email" name="email3" maxlength="50" placeholder="" ><br>
+			College Name:
+			<input class="member3" type="text" name="college3" maxlength="100" pattern="[A-Za-z\s]+" placeholder="" title="Name must contain only alphabets and spaces" ><br>
+		</div>
+		<br>
+		<div class="mhead"> Member 4 </div><br>
+		<div class="m">
+			Name:
+			<input class="member4" type="text" name="name4" maxlength="50" pattern="[A-Za-z\s]+" placeholder="Full Name" title="Name must contain only alphabets and spaces"><br>
+			Contact Number:
+			<input class="member4" type="number" name="contact4" maxlength="10" placeholder="10 digits" ><br>
+			Email:
+			<input class="member4" type="email" name="email4" maxlength="50" placeholder="" ><br>
+			College Name:
+			<input class="member4" type="text" name="college3ge4" maxlength="100" pattern="[A-Za-z\s]+" placeholder="" title="Name must contain only alphabets and spaces" ><br>
+		</div>
+		<br><br>
+		<input type="checkbox" name="accomodation" value="yes"> Accomodation
+		<br><br>
+		Additional Comments<br>
+		<textarea name="comments" rows="10" cols="50"></textarea><br>
+		<input type="submit" value="Submit" id="submit">
+	</form>
+	</div>
+	<script src="register.js"></script>
+</body>
+</html>
